@@ -50,24 +50,7 @@ ini_set('sendmail_from', 'matheusoliveira@outlook.com.br');
 mail($destinatario, $assunto, $mensagem, $headers);
 echo "Mensagem enviada com sucesso! Verifique seu email!";
 echo "<script>loginsuccessfully()</script>";
-        /*    $corpo_email  = "Ola, o procedimento de recuperar dados, foi efetuado com sucesso !\n..";
-                $corpo_email .= "Seu login = ".$nome."\n..";
-                $corpo_email .= "Senha de acesso = ".$senha."\n..";
-                $corpo_email .= "Seu email = ".$email."\n.. ";
-                $corpo_email .= "Nao responda esse email, e-Mail automatizado";     
-                @mail($email,"Recuperacao de Senha",$corpo_email,"xxxxxx");
-*/
-     /*   $sql = "INSERT INTO usuario (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
-       $result = mysqli_query($conn,$sql);
-       if ($result) {
-        echo "<center>Usuário cadastrado com sucesso! Aguarde 3 segundos...</center>";
-        echo "<script>loginsuccessfully()</script>";
-          //   header("Location: cadastrar.php");
-        } else {
-           
-            echo "n�o foi poss�vel executar ($sql) no banco de dados: " . mysqli_error();
-            exit;
-        }*/
+       
     }
 
 ?>
